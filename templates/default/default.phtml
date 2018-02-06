@@ -88,48 +88,6 @@
 			<div class="content"></div>
 			<div class="clearfix"></div>
 		</div>
-		
-		<div id="overlay-aviso-fim">
-			<div class="background"></div>
-			<div class="content">
-				<div style='background-color:#fff;box-shadow:0px 0px 3px #444 inset;padding:15px;width:500px;'>
-					<div style='float:left;'><h1>Nerd, atenção!</h1></div>
-					<div class='clearfix'></div>
-					<div style='padding-left:30px;font-size:13px;color:#454545;font-family:Helvetica,Arial;text-transform: none;margin-top:15px;'>
-						<p>Como todos devem ter visto no <a href="http://jovemnerd.com.br/nerdoffice/o-futuro-do-jovem-nerd-nerdoffice-s04e49/" target="_blank">Nerdoffice S04E49</a>, nós recebemos a visita do Jovem Nerd do Futuro! Ele viajou no tempo/espaço para nos alertar dos perigos de manter uma rede de cadastro de mentes de Nerds brilhantes e criativos. Para impedir que essa maravilha das redes sociais se volte contra todos nós num futuro atribulado e apocalíptico, removeremos a Skynerd do ar e apagaremos todos os registros mantendo assim a salvo, no futuro, centenas de milhares de Nerds.</p>
-						<p>Atenção! Você tem até o dia 07 de fevereiro de 2014 para salvar qualquer informação, textos, imagens e contatos que tenha feito na Skynerd. Depois dessa data nada mais existirá e tudo que foi publicado irá se perder... como lágrimas na chuva.</p>
-						<p>Repetindo: Se desejar salvar suas postagens, clique no botão abaixo. Você tem até 07 de fevereiro. Pelo futuro dos Nerds!</p>
-					</div>
-				</div>
-				<div class='clearfix'></div>
-				<div style='text-align:right;width:530px;margin-top:10px;'>
-					<a href="javascript:void(0);" class="button close">Fechar Janela</a>
-					<a href="javascript:void(0);" data-href="<?php echo HOST;?>exportar-meu-conteudo" class='button export'>Exportar meu conteúdo</a>
-				</div>
-			</div>
-			<div class="clearfix"></div>
-		</div>
-		<script type="text/javascript">
-			$(document).ready(function(){
-				$("#overlay-aviso-fim .close").click(function(){
-					$("#overlay-aviso-fim").fadeOut();
-				});
-				
-				$("#overlay-aviso-fim .export").click(function(){
-					$.cookie("data_exported", 1, {
-						path : "/",
-						expires : 7
-					});
-					
-					window.open($(this).data("href"));
-					$("#overlay-aviso-fim").fadeOut();
-				});
-				
-				if($.cookie("data_exported") != '1'){
-					$("#overlay-aviso-fim").fadeIn();
-				}
-			});
-		</script>
 		<div id="wrapper">
 			<?php if($this->show_login_bar == true):?>
 				<div id="header">
