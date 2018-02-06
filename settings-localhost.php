@@ -18,11 +18,11 @@
 	define('SLAVE_DATABASE_PASSWORD', '');
 	define('SLAVE_DATABASE_HOST', '127.0.0.1');
 	
-	define('AVATAR_DIR', 'http://localhost/skynerd/media/images/avatar/');
-	define('POST_IMAGES_DIR', 'http://'.$_SERVER['HTTP_HOST'].'/skynerd/media/images/posts/');	
+	define('AVATAR_DIR', 'http://localhost/rede-social/media/images/avatar/');
+	define('POST_IMAGES_DIR', 'http://'.$_SERVER['HTTP_HOST'].'/rede-social/media/images/posts/');	
 	
-	define('AVATAR_UPLOAD_DIR', '/Users/Guilherme/Sites/' . PROJECT_DIR . '/media/images/avatar/');
-	define('POST_IMAGES_UPLOAD_DIR', '/Users/Guilherme/Sites/' . PROJECT_DIR . '/media/images/posts/');
+	define('AVATAR_UPLOAD_DIR', 'media/images/avatar/');
+	define('POST_IMAGES_UPLOAD_DIR', 'media/images/posts/');
 	
 	# Configurações de Rede
 	define('USE_HTTP_PROXY', false);
